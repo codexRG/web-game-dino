@@ -1,0 +1,87 @@
+:root{
+    --color-1: #87D6C7;
+    --color-2: #FFE2D1;
+    --color-3: #D48872;
+    --color-4: #7e928b;
+    --color-5 : cadetblue;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;}
+
+body{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-lluvia-pixeles_23-2148370435.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1715731200&semt=ais_user);
+    display: flex;
+    align-items: center;
+
+}
+
+.contenedor{
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+  border-radius: 10px;
+   border-color:black ;
+    background:linear-gradient(var(--color-1) ,var(--color-2)) ;
+    overflow: hidden;
+
+}
+
+
+.dino-corriendo{
+    animation: correr 0.25s steps(4) infinite;
+}
+
+.dino-estrellado{
+    background-position-x: -252px;
+}
+
+.score{
+    width: 100px;
+    height: 30px;
+
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 10;
+
+}
+
+.game-over{
+    display: none;
+   top: 100px;
+    position: absolute;
+    width: 100%;
+
+
+    text-align: center;
+    color: #7e928b;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+#btn{
+
+    width: 100px;
+    height: 30px;
+    background-color: #7e928b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@keyframes correr{
+    from{
+        background-position-x: 84px;
+    }
+    to{
+        background-position-x: -252px;
+    }
+}

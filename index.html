@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>juego-dinosaurio</title>
+   <style>
+.dino{
+    width: 84px; 
+    height: 84px; 
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+    background: url(assets/img/dino.png) repeat-x 0px 0px;
+    background-size:  336px 84px;
+    background-position: 0px;
+}
+
+.nube{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: 1;
+    background: url(assets/img/nube.png) repeat-x 0px 0px;
+}
+.cactus{
+    width: 46px;
+    height: 96px;
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+    background: url(assets/img/cactus1.png) repeat-x 0px 0px;
+}
+
+.cactus2{
+    width: 98px;
+    height: 66px;
+
+    background: url(assets/img/cactus2.png) no-repeat;
+}
+
+
+.suelo{
+    width: 200%;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(assets/img/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 42px;
+    color: var(--color-3);
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+
+   </style>
+
+
+</head>
+
+<body>
+    <div class="contenedor">
+
+    <div class="suelo"></div>
+
+    <div class="dino dino-corriendo"></div>
+
+    <div class="score">0</div>
+    <div class="game-over">GAME OVER 
+     <br>
+    <button class="boton-reiniciar btn " id="btn">Reiniciar </button>
+    </div>
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+   <script src="assets/js/action.js" ></script>
+   
+</body>
+</html>
